@@ -138,7 +138,7 @@
 				<key>CFBundleVersion</key>
 				<string>1.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
+				<true/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
@@ -183,12 +183,10 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>510.500000:154.000000</string>
+				<string>518.000000:178.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -364,12 +362,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>510.500000:196.000000</string>
+				<string>518.000000:220.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -412,11 +408,9 @@
 				<dict>
 					<key>Container</key>
 					<string>List</string>
-					<key>Optional</key>
-					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.string</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -478,12 +472,10 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>510.500000:238.000000</string>
+				<string>518.000000:262.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -549,6 +541,8 @@ submitMsg="$1"
 # CD到当前路径
 cd "$current_path"
 
+# add to version control
+svn add * --force
 # Commit
 svn commit -m "${submitMsg}"
 </string>
@@ -666,7 +660,7 @@ svn commit -m "${submitMsg}"
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>510.500000:628.000000</string>
+				<string>518.000000:445.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -770,7 +764,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>510.500000:874.000000</string>
+				<string>518.000000:691.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -780,40 +774,40 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>3EF96E95-B9E4-43F0-87AE-400E39BC7569</key>
+		<key>42907910-A0E5-4E01-B448-CCD3261B7D04</key>
+		<dict>
+			<key>from</key>
+			<string>49AA0F05-2042-4EB8-909D-9C021E188ACE - 49AA0F05-2042-4EB8-909D-9C021E188ACE</string>
+			<key>to</key>
+			<string>F069160E-FA25-4957-B28F-F36F40678475 - F069160E-FA25-4957-B28F-F36F40678475</string>
+		</dict>
+		<key>6AE4D9F5-4E3D-431B-B4D3-3E129D223840</key>
 		<dict>
 			<key>from</key>
 			<string>CDDB11CE-3BE0-4E9C-956A-5648D53CA681 - CDDB11CE-3BE0-4E9C-956A-5648D53CA681</string>
 			<key>to</key>
 			<string>328E45E7-EA95-47CF-B319-3421AA2102C6 - 328E45E7-EA95-47CF-B319-3421AA2102C6</string>
 		</dict>
-		<key>91EEF108-0DBC-43A8-8EAB-E73792C09C3D</key>
+		<key>8CDAE2A0-EFF4-4198-861D-C21BA6FC7C4A</key>
 		<dict>
 			<key>from</key>
+			<string>3731E99F-0C98-4A1E-962A-C41CF914D2D2 - 3731E99F-0C98-4A1E-962A-C41CF914D2D2</string>
+			<key>to</key>
 			<string>79AA723F-EC84-4440-8683-73AD2256EE50 - 79AA723F-EC84-4440-8683-73AD2256EE50</string>
-			<key>to</key>
-			<string>49AA0F05-2042-4EB8-909D-9C021E188ACE - 49AA0F05-2042-4EB8-909D-9C021E188ACE</string>
 		</dict>
-		<key>D7AB3E69-F4EB-4843-86DB-04D5F9DCF5EE</key>
-		<dict>
-			<key>from</key>
-			<string>49AA0F05-2042-4EB8-909D-9C021E188ACE - 49AA0F05-2042-4EB8-909D-9C021E188ACE</string>
-			<key>to</key>
-			<string>F069160E-FA25-4957-B28F-F36F40678475 - F069160E-FA25-4957-B28F-F36F40678475</string>
-		</dict>
-		<key>DC6E155B-1B09-484C-A210-3A14038D0396</key>
+		<key>CA349A6C-2F1E-45B2-A87B-F3016E2C50D2</key>
 		<dict>
 			<key>from</key>
 			<string>F069160E-FA25-4957-B28F-F36F40678475 - F069160E-FA25-4957-B28F-F36F40678475</string>
 			<key>to</key>
 			<string>CDDB11CE-3BE0-4E9C-956A-5648D53CA681 - CDDB11CE-3BE0-4E9C-956A-5648D53CA681</string>
 		</dict>
-		<key>EC69E7AB-7888-489B-847B-AACA28E77C83</key>
+		<key>E3525447-CAD8-4159-ADD7-3BE2F0918E03</key>
 		<dict>
 			<key>from</key>
-			<string>3731E99F-0C98-4A1E-962A-C41CF914D2D2 - 3731E99F-0C98-4A1E-962A-C41CF914D2D2</string>
-			<key>to</key>
 			<string>79AA723F-EC84-4440-8683-73AD2256EE50 - 79AA723F-EC84-4440-8683-73AD2256EE50</string>
+			<key>to</key>
+			<string>49AA0F05-2042-4EB8-909D-9C021E188ACE - 49AA0F05-2042-4EB8-909D-9C021E188ACE</string>
 		</dict>
 	</dict>
 	<key>variables</key>
